@@ -17,9 +17,11 @@ const App = () => {
         <Header />
         <Brand />
       </div>
-      <WhatGPT3 />
-      <Features />
-      <Possibility />
+      <div className="gradient__bg-1">
+        <WhatGPT3 />
+        <Features />
+        <Possibility />
+      </div>
       <Cta />
       <Blog />
       <Footer />

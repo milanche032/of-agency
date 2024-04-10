@@ -29,8 +29,8 @@
   /* global 92%+ browsers support */
   background: radial-gradient(
     circle at 100% 100%,
-    rgba(27, 120, 222, 1) 0%,
-    rgba(4, 44, 84, 1) 15%
+    rgba(27, 120, 222, 0.8) 0%,
+    rgba(4, 44, 84, 1) 25%
   );
   padding: 5rem;
   width: 100%;
@@ -51,7 +51,7 @@
   line-height: 30px;
   text-align: left;
   color: var(--color-text);
-  max-width: 1000px;
+  max-width: 800px;
 }
 .gpt3__what-content-subtext h2 {
   font-family: var(--font-family);
@@ -124,12 +124,15 @@ flex-direction: column;
 }
 @media screen and (max-width: 1350px) {
     .gpt3__what-content-subtext p {
-        max-width: 700px;
+        max-width: 500px;
       }
 }
 @media screen and (max-width: 1050px) {
     .gpt3__what-content {
         padding: 4rem;
+    }
+    .gpt3__what-content-subtext p {
+      max-width: unset;
     }
     .gpt3__what-content-subtext {
         flex-direction: column;
@@ -152,14 +155,13 @@ flex-direction: column;
 }
 @media screen and (max-width: 490px) {
     .gpt3__what-content {
-        padding: 3rem 2rem;
+        padding: 2rem 1rem;
     }
     .gpt3__what-content p {
         font-size: 14px;
         line-height: 24px;
     }
     .gpt3__what-content-cta h2 {
-    font-size: 34px;
     line-height: 40px;
     text-align: center;
     margin-bottom: 1.5rem;

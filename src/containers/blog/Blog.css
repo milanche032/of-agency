@@ -1,0 +1,19 @@
+.gpt3__blog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.gpt3__blog h2 {
+font-family: var(--font-family);
+font-size: 62px;
+font-weight: 800;
+line-height: 75px;
+letter-spacing: -0.04em;
+text-align: left;
+
+}
+.gpt3__articles {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 2rem;
+}

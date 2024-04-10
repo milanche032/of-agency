@@ -48,6 +48,42 @@ a {
     rgba(4, 12, 24, 1) 40%
   );
 }
+
+.gradient__bg-1 {
+  background: -moz-radial-gradient(
+    circle at 3% 30%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 40%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 3% 30%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 40%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 3% 30%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 40%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 3% 30%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 40%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 3% 45%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 25%
+  );
+}
 .gradient__text {
   background: var(--gradient-text);
   background-clip: text;
