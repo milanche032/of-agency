@@ -1,7 +1,7 @@
 .gpt3__features {
   display: grid;
   grid-template-columns: 5fr 7fr;
-  column-gap: 138px;
+  column-gap: 272px;
 }
 .gpt3__features-heading {
   display: flex;
