@@ -43,7 +43,7 @@
     text-align: left;
     color: var(--color-text);
     margin-bottom: 31px;
-    max-width: 479px;
+    max-width: 679px;
 }
 .gpt3__poss-content a {
     font-family: var(--font-family);

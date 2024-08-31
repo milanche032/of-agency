@@ -82,8 +82,18 @@
   color: #fff;
   
 }
+.gpt3__footer-copyright a {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 14.06px;
+  text-align: left;
+  color: var(--color-subtext);
+}
 .gpt3__footer-copyright {
     padding-top: 83px;
+}
+.gpt3__footer-copyright p:hover a {
+  text-decoration: underline;
 }
 @media screen and (max-width: 900px) {
   .gpt3__footer-cta {

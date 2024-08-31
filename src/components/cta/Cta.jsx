@@ -6,10 +6,10 @@ const Cta = () => {
     <div className='section__padding'>
       <div className='gpt3__cta'>
         <div>
-          <p>Request Early Access to Get Started</p>
-          <h2>Register today & start exploring the endless possiblities.</h2>
+          <h2>Ready to Elevate Your OnlyFans Success?</h2>
+          <p>Unlock your full earning potential with our expert OnlyFans management. Partner with us today to elevate your brand, boost your revenue, and achieve your goals.</p>
         </div>
-        <a href="#home">Get Started</a>
+        <a href="#home">Get Started Now</a>
       </div>
     </div>
   )

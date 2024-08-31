@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Possibility.css";
-import possibility from "../../assets/possibility.png";
+import Spline from "@splinetool/react-spline";
 
 const Possibility = () => {
+  const [error, setError] = useState(null);
+
+  const handleSplineError = (error) => {
+    setError(error);
+    console.log(error);
+  };
   return (
     <div className="gpt3__poss section__padding" id="possibility">
-      <div className="gpt3__poss-img">
-        <img src={possibility} alt="possibility" />
-      </div>
       <div className="gpt3__poss-content">
-        <h3>Request Early Access to Get Started</h3>
-        <h2 className="gradient__text">The possibilities are beyond your imagination</h2>
+        <h3>Company Name</h3>
+        <h2 className="gradient__text">About Us</h2>
         <p>
-          Yet bed any for travelling assistance indulgence unpleasing. Not
-          thoughts all exercise blessing. Indulgence way everything joy
-          alteration boisterous the attachment. Party we years to order allow
-          asked of.
+          At [Your Company Name], we are passionate about empowering OnlyFans
+          creators to achieve their fullest potential. With a deep understanding
+          of the platform and years of experience in digital marketing, we
+          provide tailored management services that elevate your brand and
+          maximize your earnings. Our dedicated team works behind the scenes to
+          handle every aspect of your OnlyFans presence, from strategic content
+          planning to fan engagement and financial reporting. We believe in a
+          partnership approach, where your vision and our expertise combine to
+          create exceptional results. Discover why we’re the trusted partner for
+          creators looking to take their OnlyFans career to the next level.
         </p>
         <a href="#home">Request Early Access to Get Started</a>
+      </div>
+      <div className="gpt3__poss-img">
+        {error ? (
+          <div>Error loading Spline scene: {error.message}</div>
+        ) : (
+          <Spline
+            scene="https://prod.spline.design/Y18SYZ21uiKs5lmW/scene.splinecode"
+            onError={handleSplineError}
+          />
+        )}
       </div>
     </div>
   );

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import "./Navbar.css";
 import logo from "../../assets/logo.svg";
+import { faTelegram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Menu = () => {
   return (
@@ -10,10 +12,10 @@ const Menu = () => {
         <a href="#home">Home</a>
       </p>
       <p>
-        <a href="#wgpt3">What is GPT3?</a>
+        <a href="#what-we-do">What we do?</a>
       </p>
       <p>
-        <a href="#possibility">Open Ai</a>
+        <a href="#faq">FAQs</a>
       </p>
       <p>
         <a href="#features">Case studies</a>
@@ -38,8 +40,12 @@ const Navbar = () => {
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
+        {/* <p>Sign in</p> */}
+        <button type="button">
+          {" "}
+          <FontAwesomeIcon className="icon" icon={faTelegram} />
+          Telegram Bot
+        </button>
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
@@ -60,8 +66,11 @@ const Navbar = () => {
             <div className="gpt3__navbar-menu_container-links">
               <Menu />
               <div className="gpt3__navbar-menu_container-links-sign">
-                <p>Sign in</p>
-                <button type="button">Sign up</button>
+                {/* <p>Sign in</p> */}
+                <button type="button">
+                  <FontAwesomeIcon className="icon" icon={faTelegram} />
+                  Telegram Bot
+                </button>
               </div>
             </div>
           </div>

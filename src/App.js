@@ -1,7 +1,6 @@
 import React from "react";
-import { Brand, Cta, Navbar } from "./components";
+import { Cta, Navbar } from "./components";
 import {
-  Blog,
   Features,
   Footer,
   Header,
@@ -15,7 +14,7 @@ const App = () => {
       <div className="gradient__bg">
         <Navbar />
         <Header />
-        <Brand />
+        {/* <Brand /> */}
       </div>
       <div className="gradient__bg-1">
         <WhatGPT3 />
@@ -23,7 +22,7 @@ const App = () => {
         <Possibility />
       </div>
       <Cta />
-      <Blog />
+      {/* <Blog /> */}
       <Footer />
     </div>
   );
